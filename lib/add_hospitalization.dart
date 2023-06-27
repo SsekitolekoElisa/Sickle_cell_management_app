@@ -26,7 +26,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Hospitalization',
+        title: const Text('Add Hospitalization',
         ),
         centerTitle: true,
       ),
@@ -36,13 +36,13 @@ class _AddHospitalizationState extends State<AddHospitalization> {
             children: [
               Positioned(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(10, 20, 0, 10),
+                  margin: const EdgeInsets.fromLTRB(10, 20, 0, 10),
                    width: MediaQuery.of(context).size.width - 20,
 
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Admission Date',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                      const Text('Admission Date',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                       const SizedBox(height: 10),
                     GestureDetector(
                       onTap: selectDate,
@@ -78,7 +78,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    Text('Discharge Date',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    const Text('Discharge Date',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                     const SizedBox(height: 10),
                     GestureDetector(
                       onTap: selectDate,
@@ -114,7 +114,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    Text('Complaints',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    const Text('Complaints',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                     const SizedBox(height: 10),
                     const TextField(
                       maxLines: 5,
@@ -140,7 +140,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
                       ),
                     ),
                     const SizedBox(height: 20),
-                    Text('Treatments',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+                    const Text('Treatments',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
                     const SizedBox(height: 10),
                     const TextField(
                       maxLines: 5,
@@ -165,7 +165,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
                         ),
                       ),
                     ),
-                    SizedBox(height: 140,),
+                    const SizedBox(height: 140,),
                     Center(
                       child: SizedBox(
                         width: 480,
@@ -178,7 +178,7 @@ class _AddHospitalizationState extends State<AddHospitalization> {
                               borderRadius: BorderRadius.circular(30),
                             ),
                           ),
-                        child: Text('Save', 
+                        child: const Text('Save', 
                         style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),
                         ),
                         ),                   

@@ -240,7 +240,7 @@ class _ChooseUserPageState extends State<ChooseUserPage> {
                                 onPressed: () {
                                   Navigator.push(
                                     context, 
-                                    MaterialPageRoute(builder: (context) => MyDetailsPage(),));
+                                    MaterialPageRoute(builder: (context) => const MyDetailsPage(),));
                                 },
                                 style: ElevatedButton.styleFrom(
                                   foregroundColor: Colors.white,

@@ -71,35 +71,35 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
                 height: 300,
                 width: 400,
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 20, 10, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 20, 10, 0),
                   width: MediaQuery.of(context).size.width - 15,
                   height: 200,
-                  padding: EdgeInsets.fromLTRB(0, 30, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 30, 0, 0),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Color.fromARGB(255, 255, 255, 255),
+                      color: const Color.fromARGB(255, 255, 255, 255),
                       boxShadow: [
                         BoxShadow(
                           color: Colors.black.withOpacity(0.3),
                           spreadRadius: 1,
                           blurRadius: 2,
-                          offset: Offset(0, 3),
+                          offset: const Offset(0, 3),
                         )
                       ]),
                   child: Column(
                     children: [
                       ElevatedButton.icon(
                         onPressed: _pickImageFromGallery,
-                        icon: Icon(Icons.file_upload),
-                        label: Text('Upload File'),
+                        icon: const Icon(Icons.file_upload),
+                        label: const Text('Upload File'),
                      ),
-                     SizedBox(height: 10,),
-                     Text('Upload New Prescription',
+                     const SizedBox(height: 10,),
+                     const Text('Upload New Prescription',
                      style: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold
                      ),),
-                     Text('\n Select document(jpeg,png,pdf)\n Or \n Use camera to take a photo of\n your prescription',
+                     const Text('\n Select document(jpeg,png,pdf)\n Or \n Use camera to take a photo of\n your prescription',
                      textAlign: TextAlign.center,
                      style: TextStyle(
                       fontSize: 18,
@@ -113,10 +113,10 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
                 height: 500,
                 width: 400,
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(20, 170, 10, 0),
+                  margin: const EdgeInsets.fromLTRB(20, 170, 10, 0),
                   width: MediaQuery.of(context).size.width - 15,
                   height: 0,
-                  padding: EdgeInsets.fromLTRB(0, 100, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 100, 0, 0),
                   // color: Color.fromARGB(255, 223, 222, 222),
                   child: Column(
                     children: [
@@ -132,8 +132,8 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
                             padding: const EdgeInsets.symmetric(
                                 vertical: 12.0, horizontal: 16.0),
                           ),
-                          icon: Icon(Icons.camera_alt),
-                          label: Text('Use camera'),
+                          icon: const Icon(Icons.camera_alt),
+                          label: const Text('Use camera'),
                         ),
                       )
                     ],
@@ -142,7 +142,7 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
               ),
               Positioned(
                 child: Container(
-               padding: EdgeInsets.only(right: 140),
+               padding: const EdgeInsets.only(right: 140),
                   margin: const EdgeInsets.fromLTRB(10, 350, 20, 0),
                   height: 130,
                   width: 500,
@@ -166,10 +166,10 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
               ),
               Positioned(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(10, 400, 10, 0),
+                  margin: const EdgeInsets.fromLTRB(10, 400, 10, 0),
                   height: 350,
                   width: 500,
-                  color: Color.fromARGB(255, 232, 233, 233),
+                  color: const Color.fromARGB(255, 232, 233, 233),
                   child: SingleChildScrollView(
                     child: Column(
                       children: List.generate(

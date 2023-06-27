@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sickle_cell_app1/Hospitalization.dart';
+import 'package:sickle_cell_app1/hospitalization.dart';
 // import 'package:sickle_cell_app1/add_appointment.dart';
 import 'package:sickle_cell_app1/appointment.dart';
 import 'package:sickle_cell_app1/blood_transfusion_diary.dart';
@@ -77,7 +77,7 @@ class _ImageSliderState extends State<HomePage1> {
       child: ListView(
         padding: EdgeInsets.zero,
         children: [
-          DrawerHeader(
+          const DrawerHeader(
             decoration: BoxDecoration(
               color: Colors.red,
             ),
@@ -99,16 +99,16 @@ class _ImageSliderState extends State<HomePage1> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.person),
+            leading: const Icon(Icons.person),
             title: const Text('My Profile'),
             onTap: () {
               // Navigator.pop(context);
               Navigator.push(context,
-              MaterialPageRoute(builder: (context) => MyDetailsPage(),));
+              MaterialPageRoute(builder: (context) => const MyDetailsPage(),));
             },
           ),
           ListTile(
-            leading: Icon(Icons.settings),
+            leading: const Icon(Icons.settings),
             title: const Text('Settings'),
             onTap: () {
               // TODO: Handle drawer item 1 tap
@@ -116,7 +116,7 @@ class _ImageSliderState extends State<HomePage1> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.privacy_tip),
+            leading: const Icon(Icons.privacy_tip),
             title: const Text('Privacy Policy & Terms of Use'),
             onTap: () {
               // TODO: Handle drawer item 1 tap
@@ -124,22 +124,22 @@ class _ImageSliderState extends State<HomePage1> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.info),
+            leading: const Icon(Icons.info),
             title: const Text('About Us'),
             onTap: () {
               // TODO: Handle drawer item 2 tap
               Navigator.pop(context);
             },
           ),
-        SizedBox(height: 10),
+        const SizedBox(height: 10),
           ListTile(
-            leading: Icon(Icons.logout),
+            leading: const  Icon(Icons.logout),
             title: const Text('Log Out'),
             onTap: () {
               // TODO: Handle logout logic
               Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => LoginPage()),
+                MaterialPageRoute(builder: (context) => const LoginPage()),
               );
             },
           ),
@@ -301,7 +301,7 @@ class _ImageSliderState extends State<HomePage1> {
                   // width: double.infinity,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: Color.fromARGB(255, 255, 255, 255),
+                    color: const Color.fromARGB(255, 255, 255, 255),
                     boxShadow: [
                       BoxShadow(
                         color:
@@ -338,12 +338,12 @@ class _ImageSliderState extends State<HomePage1> {
                               trailing: TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.only(left:10),
+                                  padding: const EdgeInsets.only(left:10),
                                   tapTargetSize:
                                       MaterialTapTargetSize.shrinkWrap,
                                 ),
                                 child: Ink(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: IconButton(
@@ -355,33 +355,33 @@ class _ImageSliderState extends State<HomePage1> {
                                                 MedicineListPage()),
                                       );
                                     },
-                                    icon: Icon(Icons.arrow_forward_ios,
+                                    icon: const Icon(Icons.arrow_forward_ios,
                                         color: Colors.black),
                                   ),
                                 ),
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               thickness: 2,
                               indent: 10,
                               endIndent: 10,
                               color: Color.fromARGB(255, 90, 89, 89),
                             ),
                             ListTile(
-                              leading: Icon(
+                              leading: const Icon(
                                 Icons.local_hospital,
                                 color: Colors.red,),
-                              title: Text('Blood Transfusion Diary'),
+                              title: const Text('Blood Transfusion Diary'),
                               
                               trailing: TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.only(left:10),
+                                  padding: const EdgeInsets.only(left:10),
                                   tapTargetSize:
                                       MaterialTapTargetSize.shrinkWrap,
                                 ),
                                 child: Ink(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: IconButton(
@@ -390,34 +390,34 @@ class _ImageSliderState extends State<HomePage1> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                BloodTransfusionDiary()),
+                                                const BloodTransfusionDiary()),
                                       );
                                     },
-                                    icon: Icon(Icons.arrow_forward_ios,
+                                    icon: const Icon(Icons.arrow_forward_ios,
                                         color: Colors.black),
                                   ),
                                 ),
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               thickness: 2,
                               indent: 10,
                               endIndent: 10,
                               color: Color.fromARGB(255, 90, 89, 89),
                             ),
                             ListTile(
-                              leading: Icon(Icons.history,
+                              leading: const Icon(Icons.history,
                               color:Colors.purple),
-                              title: Text('Prescription History'),
+                              title: const Text('Prescription History'),
                               trailing: TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.only(left:10),
+                                  padding: const EdgeInsets.only(left:10),
                                   tapTargetSize:
                                       MaterialTapTargetSize.shrinkWrap,
                                 ),
                                 child: Ink(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: IconButton(
@@ -426,34 +426,34 @@ class _ImageSliderState extends State<HomePage1> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                PrescriptionHistory()),
+                                                const PrescriptionHistory()),
                                       );
                                     },
-                                    icon: Icon(Icons.arrow_forward_ios,
+                                    icon: const Icon(Icons.arrow_forward_ios,
                                         color: Colors.black),
                                   ),
                                 ),
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               thickness: 2,
                               indent: 10,
                               endIndent: 10,
                               color: Color.fromARGB(255, 90, 89, 89),
                             ),
                             ListTile(
-                              leading: Icon(Icons.hotel,
+                              leading: const Icon(Icons.hotel,
                               color:Colors.blue),
-                              title: Text('Hospitalization'),
+                              title: const Text('Hospitalization'),
                               trailing: TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                 padding: EdgeInsets.only(left:10),
+                                 padding: const EdgeInsets.only(left:10),
                                   tapTargetSize:
                                       MaterialTapTargetSize.shrinkWrap,
                                 ),
                                 child: Ink(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: IconButton(
@@ -462,34 +462,34 @@ class _ImageSliderState extends State<HomePage1> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                Hospitalization()),
+                                                const Hospitalization()),
                                       );
                                     },
-                                    icon: Icon(Icons.arrow_forward_ios,
+                                    icon: const Icon(Icons.arrow_forward_ios,
                                         color: Colors.black),
                                   ),
                                 ),
                               ),
                             ),
-                            Divider(
+                            const Divider(
                               thickness: 2,
                               indent: 10,
                               endIndent: 10,
                               color: Color.fromARGB(255, 90, 89, 89),
                             ),
                             ListTile(
-                              leading: Icon(Icons.calendar_today,
+                              leading: const Icon(Icons.calendar_today,
                               color: Colors.green,),
-                              title: Text('Add Appointment reminder'),
+                              title: const Text('Add Appointment reminder'),
                               trailing: TextButton(
                                 onPressed: () {},
                                 style: TextButton.styleFrom(
-                                  padding: EdgeInsets.only(left:10),
+                                  padding: const EdgeInsets.only(left:10),
                                   tapTargetSize:
                                       MaterialTapTargetSize.shrinkWrap,
                                 ),
                                 child: Ink(
-                                  decoration: BoxDecoration(
+                                  decoration: const BoxDecoration(
                                     shape: BoxShape.circle,
                                   ),
                                   child: IconButton(
@@ -498,10 +498,10 @@ class _ImageSliderState extends State<HomePage1> {
                                         context,
                                         MaterialPageRoute(
                                             builder: (context) =>
-                                                AppointmentList()),
+                                                const AppointmentList()),
                                       );
                                     },
-                                    icon: Icon(Icons.arrow_forward_ios,
+                                    icon: const Icon(Icons.arrow_forward_ios,
                                         color: Colors.black),
                                   ),
                                 ),
@@ -516,7 +516,7 @@ class _ImageSliderState extends State<HomePage1> {
               ),
               Positioned(
                 child: Container(
-                  padding: EdgeInsets.only(left: 5),
+                  padding: const EdgeInsets.only(left: 5),
                   margin: const EdgeInsets.fromLTRB(10, 580, 10, 50),
                   height: 130,
                   width: MediaQuery.of(context).size.width - 15,
@@ -570,7 +570,7 @@ class _ImageSliderState extends State<HomePage1> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                              MedicinePage()));
+                                              const MedicinePage()));
                                 },
                                 child: Column(
                                   children: [

@@ -15,19 +15,19 @@ class _BloodTransfusionDiaryState extends State<BloodTransfusionDiary> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Blood Transfusion Diary'),
+        title: const Text('Blood Transfusion Diary'),
         actions: [
           IconButton(onPressed: ()
           {
             Navigator.push(context, 
             MaterialPageRoute(builder: 
-            (context) => BloodTransfusionRecord(),));
+            (context) => const BloodTransfusionRecord(),));
           }, 
-          icon:Icon(Icons.add))
+          icon:const Icon(Icons.add))
         ],
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Stack(
             

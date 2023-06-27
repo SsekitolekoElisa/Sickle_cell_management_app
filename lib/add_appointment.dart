@@ -49,7 +49,7 @@ class _AddAppointmentState extends State<AddAppointment> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(
+        title: const Text(
           'Add Appointment',
         ),
         centerTitle: true,
@@ -60,12 +60,12 @@ class _AddAppointmentState extends State<AddAppointment> {
             children: [
               Positioned(
                 child: Container(
-                  margin: EdgeInsets.fromLTRB(10, 20, 0, 10),
+                  margin: const EdgeInsets.fromLTRB(10, 20, 0, 10),
                   width: MediaQuery.of(context).size.width - 20,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(
+                      const Text(
                         'Admission Date',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
@@ -105,7 +105,7 @@ class _AddAppointmentState extends State<AddAppointment> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      Text(
+                      const Text(
                         'Treatments',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
@@ -135,7 +135,7 @@ class _AddAppointmentState extends State<AddAppointment> {
                         ),
                       ),
                       const SizedBox(height: 20),
-                      Text(
+                      const Text(
                         'Reminder Time',
                         style: TextStyle(
                             fontSize: 20, fontWeight: FontWeight.bold),
@@ -175,7 +175,7 @@ class _AddAppointmentState extends State<AddAppointment> {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 300,
                       ),
                       Center(
@@ -189,7 +189,7 @@ class _AddAppointmentState extends State<AddAppointment> {
                                 borderRadius: BorderRadius.circular(30),
                               ),
                             ),
-                            child: Text(
+                            child: const Text(
                               'Save',
                               style: TextStyle(
                                   fontSize: 25, fontWeight: FontWeight.bold),

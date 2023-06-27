@@ -16,7 +16,7 @@ class Lee extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.red
       ),
-    home: SplashScreen(),  
+    home: const SplashScreen(),  
     );
   }
 }
@@ -32,7 +32,7 @@ class _RootpageState extends State<Rootpage> {
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(
+    return  const Scaffold(
       // appBar: AppBar(
       //   title: const Text('Sickle Cell App'),
       // ),

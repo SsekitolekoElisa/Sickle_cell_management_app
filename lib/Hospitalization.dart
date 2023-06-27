@@ -14,19 +14,19 @@ class _HospitalizationState extends State<Hospitalization> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Hospitalization'),
+        title: const Text('Hospitalization'),
         actions: [
           IconButton(onPressed: ()
           {
             Navigator.push(context, 
             MaterialPageRoute(builder: 
-            (context) => AddHospitalization(),));
+            (context) => const AddHospitalization(),));
           }, 
-          icon:Icon(Icons.add))
+          icon:const Icon(Icons.add))
         ],
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Stack(
             

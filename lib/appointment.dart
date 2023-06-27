@@ -13,19 +13,19 @@ class _AppointmentListState extends State<AppointmentList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Appointment List'),
+        title: const Text('Appointment List'),
         actions: [
           IconButton(onPressed: ()
           {
             Navigator.push(context, 
             MaterialPageRoute(builder: 
-            (context) => AddAppointment(),));
+            (context) => const AddAppointment(),));
           }, 
-          icon:Icon(Icons.add))
+          icon:const Icon(Icons.add))
         ],
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Stack(
             

@@ -326,7 +326,7 @@ class _MyDetailsPageState extends State<MyDetailsPage> {
                             ElevatedButton(
                                 onPressed: () {
                                   Navigator.push(context, 
-                                  MaterialPageRoute(builder: (context) => DiseaseTypePage(),));
+                                  MaterialPageRoute(builder: (context) => const DiseaseTypePage(),));
                                 },
                                 style: ElevatedButton.styleFrom(
                                   foregroundColor: Colors.white,

@@ -25,10 +25,10 @@ class _BloodTransfusionRecordState extends State<BloodTransfusionRecord> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Add Blood Transfusion Record'),
+        title: const Text('Add Blood Transfusion Record'),
         centerTitle: true,
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: SingleChildScrollView(
           child: Stack(
             

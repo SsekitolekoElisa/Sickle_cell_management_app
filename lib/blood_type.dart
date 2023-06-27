@@ -160,7 +160,7 @@ class _BloodTypePageState extends State<BloodTypePage> {
                             ElevatedButton(
                                 onPressed: () {
                                   Navigator.push(context, 
-                                  MaterialPageRoute(builder: (context) => ImageUploadPage(),));
+                                  MaterialPageRoute(builder: (context) => const ImageUploadPage(),));
                                 },
                                 style: ElevatedButton.styleFrom(
                                   foregroundColor: Colors.white,

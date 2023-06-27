@@ -14,6 +14,7 @@ class MedicinePage extends StatefulWidget {
   const MedicinePage({Key? key}) : super(key: key);
 
   @override
+  // ignore: library_private_types_in_public_api
   _MedicinePageState createState() => _MedicinePageState();
 }
 
@@ -83,7 +84,7 @@ class _MedicinePageState extends State<MedicinePage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Container(
-                      padding: EdgeInsets.fromLTRB(0, 10, 0, 10),
+                      padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                       margin: const EdgeInsets.fromLTRB(0, 145, 0, 0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
@@ -171,7 +172,7 @@ class _MedicinePageState extends State<MedicinePage> {
               ),
               Positioned(
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(0, 0, 120, 0),
+                  padding: const EdgeInsets.fromLTRB(0, 0, 120, 0),
                   margin: const EdgeInsets.fromLTRB(10, 510, 10, 50),
                   height: 130,
                   width: MediaQuery.of(context).size.width - 15,
@@ -316,7 +317,7 @@ class ImageDetailsPage extends StatelessWidget {
   final int imageIndex;
   final int sliderIndex;
 
-  ImageDetailsPage({
+  const ImageDetailsPage({super.key, 
     required this.imagePath,
     required this.imageIndex,
     required this.sliderIndex,
@@ -428,11 +429,11 @@ class ImageDetailsPage extends StatelessWidget {
                 width: 200,
                 height: 200,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Text(
                 getDescription(),
                 textAlign: TextAlign.center,
-                style: TextStyle(
+                style: const TextStyle(
                   fontSize: 18,
                 ),
               ),

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:sickle_cell_app1/Choose%20user.dart';
+import 'package:sickle_cell_app1/choose_user.dart';
 import 'package:sickle_cell_app1/home_page1.dart';
 // import 'package:sickle_cell_app1/slider.dart';
 class LoginPage extends StatefulWidget {
@@ -239,7 +238,7 @@ Row(
                             ElevatedButton(
                               onPressed: () {
                                 Navigator.push(context, 
-                                MaterialPageRoute(builder: (context) => ChooseUserPage()));
+                                MaterialPageRoute(builder: (context) => const ChooseUserPage()));
                               },
                               style: ButtonStyle(
                                 fixedSize: MaterialStateProperty.all<Size>(
@@ -265,7 +264,7 @@ Row(
                           TextButton(
                             onPressed: () {
                                  Navigator.push(context, 
-                                 MaterialPageRoute(builder: (context) => LoginPage())); // Handle 'sign in' button press
+                                 MaterialPageRoute(builder: (context) => const LoginPage())); // Handle 'sign in' button press
                             },
                             child: const Text(
                                   'Sign in',
@@ -375,7 +374,7 @@ Row(
                             ElevatedButton(
                                 onPressed: () {
                                   Navigator.push(context, 
-                                  MaterialPageRoute(builder: (context) => HomePage1(),));
+                                  MaterialPageRoute(builder: (context) => const HomePage1(),));
                                 }, child: const Text('Login')),
                              const SizedBox(height: 20),   
                              Row(

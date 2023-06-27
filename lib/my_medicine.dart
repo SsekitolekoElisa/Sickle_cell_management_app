@@ -13,11 +13,13 @@ class MedicineListPage extends StatelessWidget {
     MedicineCard("Medicine 3"),
   ];
 
+ MedicineListPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Medicine List'),
+        title: const Text('Medicine List'),
         centerTitle: true,
       ),
       body: ListView.builder(
@@ -27,13 +29,13 @@ class MedicineListPage extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Card(
               child: ListTile(
-                leading: Icon(Icons.access_time),
+                leading: const Icon(Icons.access_time),
                 title: Text(medicineList[index].title),
                 trailing: IconButton(
-                  icon: Icon(Icons.add),
+                  icon: const Icon(Icons.add),
                   onPressed: () {
                     Navigator.push(context, 
-                    MaterialPageRoute(builder: (context) => AddMedicine(),));// Add button action
+                    MaterialPageRoute(builder: (context) => const AddMedicine(),));// Add button action
                   },
                 ),
               ),

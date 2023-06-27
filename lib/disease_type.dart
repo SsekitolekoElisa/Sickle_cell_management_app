@@ -188,7 +188,7 @@ class _DiseaseTypePageState extends State<DiseaseTypePage> {
                             ElevatedButton(
                                 onPressed: () {
                                   Navigator.push(context, 
-                                  MaterialPageRoute(builder: (context) => BloodTypePage(),));
+                                  MaterialPageRoute(builder: (context) => const BloodTypePage(),));
                                 },
                                 style: ElevatedButton.styleFrom(
                                   foregroundColor: Colors.white,
