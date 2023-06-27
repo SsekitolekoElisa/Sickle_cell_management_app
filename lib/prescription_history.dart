@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
@@ -39,6 +41,7 @@ class _PrescriptionHistoryState extends State<PrescriptionHistory> {
     }
   }
 
+  // ignore: unused_element
   Future<void> _uploadFiles() async {
     if (_uploadedFiles.isNotEmpty) {
       // Perform the file upload logic here
