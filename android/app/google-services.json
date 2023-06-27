@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "994230611676",
-    "project_id": "sickle-cell-management-app",
-    "storage_bucket": "sickle-cell-management-app.appspot.com"
+    "project_number": "568815769546",
+    "project_id": "mysickleapp",
+    "storage_bucket": "mysickleapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:994230611676:android:6894a6c96270bf9f5ace19",
+        "mobilesdk_app_id": "1:568815769546:android:156d5b2d5083d226abe133",
         "android_client_info": {
           "package_name": "com.example.sickle_cell_app1"
         }
       },
       "oauth_client": [
         {
-          "client_id": "994230611676-rvoqa5abv2dssb992oiqn4dtrur1crms.apps.googleusercontent.com",
+          "client_id": "568815769546-nklad19fe7itpprf3ufuelq8jn3pftgh.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDN1RLtwkjUeSU_Ck7Isnm_zdkYSMoqW-4"
+          "current_key": "AIzaSyC9bkV9a2-Z7SUuUnlTynNIwoK5kf7zK4k"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "994230611676-rvoqa5abv2dssb992oiqn4dtrur1crms.apps.googleusercontent.com",
+              "client_id": "568815769546-nklad19fe7itpprf3ufuelq8jn3pftgh.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
-import 'package:sickle_cell_app1/Choose%20user.dart';
+import 'package:sickle_cell_app1/choose_user.dart';
 import 'package:sickle_cell_app1/home_page1.dart';
 
 void main() {
